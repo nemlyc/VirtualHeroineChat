@@ -47,7 +47,7 @@ public class EntrySceneUI : MonoBehaviour
     }
 
     private bool IsFilledText() {
-        if (!nameInputField.text.Equals("")) {
+        if (!nameInputField.text.Equals("") && !roomInputField.text.Equals("")) {
             return true;
         } else {
             return false;
