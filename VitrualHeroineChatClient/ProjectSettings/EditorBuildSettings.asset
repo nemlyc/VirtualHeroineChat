@@ -1,0 +1,14 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/EntryScene.unity
+    guid: f8a703a2e825152459a3b1827f138838
+  - enabled: 1
+    path: Assets/Scenes/VHChatClient.unity
+    guid: 8382b104595ff62458531fc26e70dd60
+  m_configObjects: {}
