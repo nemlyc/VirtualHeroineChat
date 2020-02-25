@@ -18,6 +18,9 @@ namespace VHChat.Share.MessagePackObjects
         public string Name { get; set; }
 
         [Key(2)]
-        public string Biography { get; set; }
+        public string message { get; set; }
+
+        [Key(3)]
+        public string WithEmotion { get; set; }
     }
 }

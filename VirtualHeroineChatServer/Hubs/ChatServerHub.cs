@@ -9,19 +9,19 @@ using MagicOnion.Server.Hubs;
 using VHChat.Share.Hubs;
 using VHChat.Share.MessagePackObjects;
 using System.Threading.Tasks;
+using System.Collections.Generic;
 
 public class ChatServerHub : StreamingHubBase<IChathub, IChatHubReciever>, IChathub
 {
     IGroup chatRoom;
     User mySelf;
 
-    public async Task JoinRoomAsync(User host, string opponentId) {
-        const string roomName = "Room";
+    public async Task JoinRoomAsync(User user,string roomId) {
+        string roomName = roomId;
         this.chatRoom = await this.Group.AddAsync(roomName);
-
-        mySelf = host;
-
-        this.Broadcast(chatRoom).OnJoinRoom(mySelf.Name, mySelf.Biography);
+        mySelf = user;
+        System.Console.WriteLine($"{user.Name}が{roomId}に入室しました。");
+        this.Broadcast(chatRoom).OnJoinRoom(mySelf.Name);
     }
 
     public async Task LeaveRoomAsync() {
@@ -31,26 +31,14 @@ public class ChatServerHub : StreamingHubBase<IChathub, IChatHubReciever>, IChat
     }
 
     public async Task SendMessageAsync(string message, string emotion) {
-        var messageContent = new MessageContent();
-        SettingMeta(messageContent, mySelf);
-        messageContent.Message = message;
-        messageContent.WithEmotion = emotion;
+        mySelf.message = message;
+        mySelf.WithEmotion = emotion;
         
-        this.Broadcast(chatRoom).OnSendMessage(messageContent.Name, messageContent.Message, messageContent.WithEmotion);
-    }
-
-    public Task GenerateIdAsync() {
-        throw new System.NotImplementedException();
+        this.Broadcast(chatRoom).OnSendMessage(mySelf.Name, mySelf.message, mySelf.WithEmotion);
     }
 
     protected override ValueTask OnDisconnected() {
         return CompletedTask;
     }
-
-    void SettingMeta(MessageContent messageContent, User profile) {
-        messageContent.UserId = profile.UserId;
-        messageContent.Name = profile.Name;
-    }
-
 }
 
