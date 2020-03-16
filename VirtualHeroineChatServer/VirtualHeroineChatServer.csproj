@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <ServerGarvageCollection>true</ServerGarvageCollection>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MagicOnion" Version="3.0.8" />
+    <PackageReference Include="MagicOnion.Hosting" Version="3.0.8" />
+    <PackageReference Include="MessagePack" Version="2.1.90" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\VitrualHeroineChatClient\Assets\Scripts\ServerShared\**\*.cs" LinkBase="LinkFromUnity" />
+  </ItemGroup>
+</Project>
