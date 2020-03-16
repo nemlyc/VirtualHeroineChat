@@ -27,11 +27,12 @@
 4. ProjectSettingsで "Api Compatibility Level" が ".Net 4.x" に、"Allow 'unsafe' code" にチェックが入っていることを確認。
 5. UniVRMの最新版（0.55.0）を入れるhttps://github.com/vrm-c/UniVRM/releases
 6. TextMeshProをインポート。（ライセンスに注意してフォントアセットを作成することで日本語を使用することができます。）
-7. 任意のvrmモデルをインポート。
-8. モデルを正面にうまく配置する（）。
-9. yを180度反転、leftArm, rightArmを70くらい曲げると良い感じになります。
-10. 画面サイズを（400 * 800）に設定する。
-11. ビルドします。
+7. ない場合は、``` font.unitypackage ```をダブルクリックしてインポートします。
+8. 任意のvrmモデルをインポート。
+9. モデルを正面にうまく配置する（）。
+10. yを180度反転、leftArm, rightArmを70くらい曲げると良い感じになります。
+11. 画面サイズを（400 * 800）に設定する。
+12. ビルドします。
 
 ## Licences
 This software : MIT Licence
