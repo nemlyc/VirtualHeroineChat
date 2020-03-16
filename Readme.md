@@ -37,9 +37,9 @@
 This software : MIT Licence
 
 This software includes the work that is distributed in the Apache License 2.0
-MessagePack C# : https://github.com/neuecc/MessagePack-CSharp/blob/master/LICENSE
-MagicOnion : https://github.com/Cysharp/MagicOnion/blob/master/LICENSE
-lz4net : https://github.com/MiloszKrajewski/lz4net/edit/master/LICENSE.md
+- MessagePack C# : https://github.com/neuecc/MessagePack-CSharp/blob/master/LICENSE
+- MagicOnion : https://github.com/Cysharp/MagicOnion/blob/master/LICENSE
+- lz4net : https://github.com/MiloszKrajewski/lz4net/edit/master/LICENSE.md
 
 ## Auther
 Motoki
