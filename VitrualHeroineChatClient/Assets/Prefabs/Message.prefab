@@ -66,8 +66,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
@@ -180,12 +178,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "\u3055\u3093\u3077\u308B\u3066\u304D\u3059\u3068"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 509746c60deeb454cb2db04b57b87a95, type: 2}
-  m_sharedMaterial: {fileID: 3505207937515640968, guid: 509746c60deeb454cb2db04b57b87a95,
+  m_fontAsset: {fileID: 11400000, guid: c9f2ec8638a06e14b8bd08d3cdf15e45, type: 2}
+  m_sharedMaterial: {fileID: -6845842003075256569, guid: c9f2ec8638a06e14b8bd08d3cdf15e45,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
