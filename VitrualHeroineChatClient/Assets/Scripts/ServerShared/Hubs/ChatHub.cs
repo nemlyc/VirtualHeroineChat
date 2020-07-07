@@ -1,16 +1,4 @@
-﻿/**
- * MagicOnion
- * Copyright (c) Yoshifumi Kawai
- * Copyright (c) Cysharp, Inc.
- * Released under the MIT license
- * https://github.com/Cysharp/MagicOnion/blob/master/LICENSE
- * MessagePack for C#
- * Copyright (c) 2017 Yoshifumi Kawai and contributors
- * Released under the MIT license
- * https://github.com/neuecc/MessagePack-CSharp/blob/master/LICENSE
- */
-
-using MagicOnion;
+﻿using MagicOnion;
 using VHChat.Share.MessagePackObjects;
 using System.Threading.Tasks;
 

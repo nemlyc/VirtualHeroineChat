@@ -1,17 +1,4 @@
-﻿/**
- * MagicOnion
- * Copyright (c) Yoshifumi Kawai
- * Copyright (c) Cysharp, Inc.
- * Released under the MIT license
- * https://github.com/Cysharp/MagicOnion/blob/master/LICENSE
- * 
- * UniVRM
- * Copyright (c) 2018 DWANGO Co., Ltd. for UniVRM
- * Copyright (c) 2018 ousttrue for UniGLTF, UniHumanoid
- * Copyright (c) 2018 Masataka SUMI for MToon
- * https://github.com/vrm-c/UniVRM/blob/master/LICENSE.txt
- */
-using Grpc.Core;
+﻿using Grpc.Core;
 using MagicOnion.Client;
 using VHChat.Share.Hubs;
 using VHChat.Share.MessagePackObjects;

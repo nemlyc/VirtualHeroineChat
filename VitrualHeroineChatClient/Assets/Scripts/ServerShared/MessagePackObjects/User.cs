@@ -1,10 +1,4 @@
-﻿/**
- * MessagePack for C#
- * Copyright (c) 2017 Yoshifumi Kawai and contributors
- * Released under the MIT license
- * https://github.com/neuecc/MessagePack-CSharp/blob/master/LICENSE
- */
-using MessagePack;
+﻿using MessagePack;
 
 namespace VHChat.Share.MessagePackObjects
 {
